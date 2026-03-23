@@ -313,6 +313,10 @@ color: var(--c-white);
 .nav-cta {
 padding: 0.5rem 1.5rem;
 font-size: 0.9rem;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+line-height: 1;
 }
 
 .mobile-menu-btn {
@@ -510,14 +514,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 75px;
+min-width: 75px;
+width: auto;
+padding: 0 10px;
 height: 75px;
 border-radius: 4px;
 box-shadow: 0 5px 15px rgba(0,0,0,0.3);
 }
 
 .time-val {
-font-size: 2.2rem;
+font-size: 1.9rem;
 font-weight: 800;
 font-family: var(--font-display);
 line-height: 1;
@@ -1341,15 +1347,23 @@ font-size: 1.5rem;
   color: var(--c-red);
 }
 
-/* About sekcia — dve videa vedľa textu, zarovnané hore */
+/* About sekcia — dve videa vedľa textu, rovnaká výška ako text */
 .about-section .grid-2 {
-  align-items: start;
+  align-items: stretch;
 }
 
 .about-media {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  height: 100%;
+}
+
+.about-media .video-container {
+  flex: 1;
+  padding-bottom: 0;
+  height: auto;
+  min-height: 180px;
 }
 
 /* FIX: overflow:hidden na sekciách so slide animáciami
