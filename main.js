@@ -40,7 +40,7 @@ function initFromConfig() {
 
   // Navbar logo text
   const navLogo = document.getElementById('cfg-nav-logo');
-  if (navLogo) navLogo.textContent = E.name;
+  if (navLogo) navLogo.textContent = E.name.split(' ')[0].toUpperCase();
 
   // Copyright
   const copyright = document.getElementById('cfg-copyright');
