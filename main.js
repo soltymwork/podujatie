@@ -38,6 +38,14 @@ function initFromConfig() {
   const metaDesc = document.querySelector('meta[name="description"]');
   if (metaDesc) metaDesc.content = `${E.edition} ${E.name}. ${E.dateDisplay}, ${E.location}.`;
 
+  // Navbar logo text
+  const navLogo = document.getElementById('cfg-nav-logo');
+  if (navLogo) navLogo.textContent = E.name;
+
+  // Copyright
+  const copyright = document.getElementById('cfg-copyright');
+  if (copyright) copyright.innerHTML = `&copy; ${E.year} ${E.name}. Všetky práva vyhradené.`;
+
   // Hero
   const edition = document.getElementById('cfg-edition');
   if (edition) edition.textContent = E.edition;

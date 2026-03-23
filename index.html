@@ -11,15 +11,15 @@
   </script> -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
-  <title>G-SHOCK RunDay Trávnica - 5. ročník 13. Jún 2026</title>
-  <meta name="description" content="Jubilejný 5. ročník G-Shock Runday v Trávnici. Bežecký sviatok, hudba, tombola a program pre celú rodinu! 13. júna 2026, Areál ZŠ Trávnica.">
+  <title>Názov Vášho Podujatia 2026</title>
+  <meta name="description" content="Bežecké podujatie pre celú rodinu. Beh, hudba, program a zábava na celý deň.">
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'">
   <noscript><link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&family=Outfit:wght@300;400;600;800&family=Plus+Jakarta+Sans:wght@400;500;700&display=swap" rel="stylesheet"></noscript>
   <link rel="preload" href="./hero-image.webp" as="image" type="image/webp">
-  <link rel="icon" href="./runday-logo.png" type="image/png">
+  <link rel="icon" href="./hero-image.webp" type="image/webp">
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
@@ -28,7 +28,7 @@
     <div class="container nav-container">
       <div class="logo-area">
         <a href="/" class="logo-link">
-          <img src="./runday-logo.png" alt="RunDay Trávnica" class="nav-logo" width="120" height="40" style="height: 40px; width: auto;">
+          <span id="cfg-nav-logo" style="font-family: Orbitron, sans-serif; font-weight: 700; font-size: 0.9rem; color: white; text-transform: uppercase; letter-spacing: 1px; line-height: 1.2;">PODUJATIE</span>
         </a>
       <div class="nav-social">
           <a href="#" target="_blank" rel="noopener" class="nav-social-link cfg-fb-url" aria-label="Facebook">
@@ -66,9 +66,6 @@
             <div class="hero-left-col">
         <div class="hero-badge reveal fade-up" id="cfg-edition">5. ročník</div>
         <div class="hero-title-row">
-          <div class="hero-medal-wrap">
-            <img src="./medaila.png" alt="Medaila G-SHOCK RunDay Trávnica" class="hero-medal reveal fade-up">
-          </div>
           <!-- Nadpis — zmeniť manuálne pri novom evente -->
           <h1 class="hero-title reveal fade-up" style="transition-delay: 100ms">NÁZOV<br>PODUJATIA 2026</h1>
         </div>
@@ -77,9 +74,6 @@
         <div class="hero-countdown-label reveal fade-up" style="transition-delay: 300ms">Beh začne o</div>
         <!-- Countdown Wrapper -->
         <div class="countdown-wrapper reveal fade-up" style="transition-delay: 400ms">
-          <div class="countdown-partner">
-            <img src="./gshock-logo.png" alt="G-SHOCK" class="gshock-countdown-logo">
-          </div>
           <div class="countdown-timer" id="countdown">
             <div class="time-box"><span class="time-val" id="cd-days">00</span><span class="time-label">Dní</span></div>
             <div class="time-box"><span class="time-val" id="cd-hours">00</span><span class="time-label">Hodín</span></div>
@@ -104,26 +98,20 @@
       <div class="grid-2 align-center">
         <div class="about-text reveal slide-right">
           <h2 class="section-title">Prečo nesmieš <span class="text-red">chýbať?</span></h2>
-          <p class="lead-text">Či ste profi bežec, hobby nadšenec alebo hľadáte program pre deti, 13. júna v Trávnici si prídete na svoje!</p>
-          <p>Pripravili sme si pre vás nielen kvalitné bežecké trate, ale aj bohatý sprievodný program, ktorý roztancuje každého. Naša snaha je spojiť šport a kultúru do jedného fantastického dňa, kedy sa môže stretnúť celá komunita a zažiť spolu úžasné momenty.</p>
+          <p class="lead-text">Či ste skúsený bežec, hobby nadšenec alebo hľadáte program pre celú rodinu, toto podujatie je pre vás!</p>
+          <p>Pripravili sme kvalitné bežecké trate, bohatý sprievodný program a zábavu pre všetkých. Naším cieľom je spojiť šport, komunitu a dobrú náladu do nezabudnuteľného dňa.</p>
           <ul class="check-list runner-list">
-            <li class="reveal slide-left" style="transition-delay: 0ms">Krásna účastnícka medaila pre každého bežca</li>
-            <li class="reveal slide-left" style="transition-delay: 150ms">Merané preteky so špičkovým čipovým systémom</li>
-            <li class="reveal slide-left" style="transition-delay: 300ms">Tombola, aká tu ešte nebola!</li>
+            <li class="reveal slide-left" style="transition-delay: 0ms">Účastnícka medaila pre každého finišera</li>
+            <li class="reveal slide-left" style="transition-delay: 150ms">Merané preteky s čipovým systémom</li>
+            <li class="reveal slide-left" style="transition-delay: 300ms">Tombola s hodnotnými cenami</li>
             <li class="reveal slide-left" style="transition-delay: 450ms">Zábava a atrakcie pre deti po celý deň</li>
-            <li class="reveal slide-left" style="transition-delay: 600ms">Večerný koncert a Oldies párty</li>
+            <li class="reveal slide-left" style="transition-delay: 600ms">Večerný hudobný program</li>
           </ul>
         </div>
         <!-- YouTube videá — generované z event.config.js -->
         <div class="about-media relative" id="cfg-yt-videos"></div>
       </div>
 
-      <!-- Plagát -->
-      <div class="poster-row reveal fade-up">
-        <div class="poster-wrap">
-          <img src="./plagat.png" alt="Plagát G-SHOCK RunDay Trávnica 2026" class="poster-img">
-        </div>
-      </div>
     </div>
   </section>
 
@@ -136,36 +124,36 @@
       </div>
       <div class="grid-3 cards-container">
         <div class="card premium-card highlight-card reveal fade-up" style="transition-delay: 100ms">
-          <h3 class="text-red">3,3 km Beh</h3>
-          <p>Ideálna dĺžka pre každého. Či už začínate alebo si chcete užiť rýchlejšie tempo, táto trať je pre vás.</p>
+          <h3 class="text-red">Krátka trasa</h3>
+          <p>Ideálna pre začiatočníkov aj rodiny. Prístupná trasa vhodná pre každého bez rozdielu veku a kondície.</p>
           <a href="#" target="_blank" class="btn btn-primary mt-auto cfg-reg-url">Registrovať</a>
         </div>
         <div class="card premium-card highlight-card reveal fade-up" style="transition-delay: 200ms">
-          <h3 class="text-red">10 km Beh</h3>
-          <p>Výzva pre náročnejších. Prekonajte sami seba na 10 km trati a zabojujte o popredné umiestnenia.</p>
+          <h3 class="text-red">Hlavná trasa</h3>
+          <p>Výzva pre všetkých bežcov. Prekonajte sami seba a zabojujte o popredné umiestnenia v kategórii.</p>
           <a href="#" target="_blank" class="btn btn-primary mt-auto cfg-reg-url">Registrovať</a>
         </div>
         <div class="card premium-card highlight-card reveal fade-up" style="transition-delay: 300ms">
           <h3 class="text-red">Detské behy</h3>
-          <p>Merané behy pestrých dĺžok podľa vekových kategórií. Skvelá príležitosť pre budúcich šampiónov.</p>
+          <p>Špeciálne trasy pre deti podľa vekových kategórií. Každý malý bežec dostane medailu za dokončenie.</p>
           <a href="#" target="_blank" class="btn btn-primary mt-auto cfg-reg-url">Registrovať</a>
         </div>
       </div>
-      <div class="course-map-container mt-large reveal fade-up" id="map">
-        <h2 class="section-title text-center mb-medium">Mapy <span class="text-red">tratí</span></h2>
-        <div class="maps-grid">
-          <div class="map-item">
-            <h4 class="mb-4" style="margin-bottom: 2rem">Trasa pre 3,3 km</h4>
-            <video autoplay loop muted playsinline class="map-img map-img-small">
-              <source src="./route3km.mp4" type="video/mp4">
-            </video>
-          </div>
-          <div class="map-item">
-            <h4 class="mb-4" style="margin-bottom: 2rem">Trasa pre 10 km</h4>
-            <video autoplay loop muted playsinline class="map-img">
-              <source src="./route10km.mp4" type="video/mp4">
-            </video>
-          </div>
+    </div>
+    <div class="course-map-container mt-large reveal fade-up" id="map">
+      <h2 class="section-title text-center mb-medium" style="padding: 0 1.5rem">Mapy <span class="text-red">tratí</span></h2>
+      <div class="maps-grid" style="gap: 0; margin-top: 1.5rem">
+        <div class="map-item" style="border-radius: 0; padding: 1rem 1.5rem">
+          <h4 style="margin-bottom: 1rem">Trasa</h4>
+          <video autoplay loop muted playsinline class="map-img map-img-small">
+            <source src="./route-kratka.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="map-item" style="border-radius: 0; padding: 1rem 1.5rem">
+          <h4 style="margin-bottom: 1rem">Trasa</h4>
+          <video autoplay loop muted playsinline class="map-img">
+            <source src="./route-hlavna.mp4" type="video/mp4">
+          </video>
         </div>
       </div>
     </div>
@@ -180,25 +168,25 @@
           <div class="activity-box">
             <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop')"></div>
             <div class="activity-content">
-              <h4>Hity Karola Duchoňa</h4>
-              <p>ĽUDO KURUC BAND zahrá najväčšie hity priamo po tombole.</p>
+              <h4>Živá hudba</h4>
+              <p>Večerný hudobný program s obľúbenými kapelami a interpretmi priamo na mieste konania.</p>
             </div>
           </div>
           <div class="activity-box mt-3">
             <div class="activity-img" style="background-image: url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=1000&auto=format&fit=crop')"></div>
             <div class="activity-content">
-              <h4>Oldies Party</h4>
-              <p>Od tanca neodídeme! Oslavujeme vaše bežecké výkony a tancujeme až do samého rána.</p>
+              <h4>Párty a tombola</h4>
+              <p>Oslávte svoje výkony spoločne! Tombola s hodnotnými cenami a tanec až do noci.</p>
             </div>
           </div>
         </div>
         <div class="activities-col reveal slide-left">
           <h2 class="section-title">Pre celú <span class="text-red">Rodinu</span></h2>
           <ul class="check-list runner-list">
-            <li class="reveal slide-right" style="transition-delay: 100ms">Show klauna Pepeho</li>
-            <li class="reveal slide-right" style="transition-delay: 200ms">Tradičná penová párty</li>
-            <li class="reveal slide-right" style="transition-delay: 300ms">Skákacie hrady</li>
-            <li class="reveal slide-right" style="transition-delay: 400ms">Maľovanie na tvár</li>
+            <li class="reveal slide-right" style="transition-delay: 100ms">Detský program a atrakcie</li>
+            <li class="reveal slide-right" style="transition-delay: 200ms">Skákacie hrady</li>
+            <li class="reveal slide-right" style="transition-delay: 300ms">Maľovanie na tvár</li>
+            <li class="reveal slide-right" style="transition-delay: 400ms">Penová párty</li>
             <li class="reveal slide-right" style="transition-delay: 500ms">Bohaté občerstvenie počas celého dňa</li>
           </ul>
         </div>
@@ -255,7 +243,7 @@
         <p><strong id="cfg-organizer">Organizátor: OZ Trávničan</strong></p>
         <p><a href="mailto:oztravnican@gmail.com" id="cfg-email">oztravnican@gmail.com</a> &nbsp;·&nbsp; <a href="tel:+421908776977" id="cfg-phone">0908 776 977</a></p>
       </div>
-      <p class="copyright" style="margin-top: 0.6rem">&copy; 2026 G-Shock RunDay Trávnica. Všetky práva vyhradené.</p>
+      <p class="copyright" style="margin-top: 0.6rem" id="cfg-copyright">&copy; 2026 Názov Podujatia. Všetky práva vyhradené.</p>
       <p class="copyright" style="margin-top: 0.4rem">Created by Soltym</p>
     </div>
   </footer>
